@@ -1,0 +1,28 @@
+﻿<Page x:Class="ADOWPFModule4prt2.Pages.ListGroup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ADOWPFModule4prt2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ListGroup">
+
+    <Grid>
+        <ListView x:Name="Group">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Group ID" DisplayMemberBinding="{Binding Path= GroupId }"></GridViewColumn>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path= Name }"></GridViewColumn>
+                        <GridViewColumn Header="Модель"></GridViewColumn>
+                        <GridViewColumn Header="Год выпуска"></GridViewColumn>
+                        <GridViewColumn Header="Серийный номер"></GridViewColumn>
+                        <GridViewColumn Header="Последние мото-часы"></GridViewColumn>
+                        <GridViewColumn Header="Общая наработка машины"></GridViewColumn>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>
